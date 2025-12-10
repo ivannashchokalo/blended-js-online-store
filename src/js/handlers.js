@@ -307,6 +307,3 @@ export function handleBtnSearch(e) {
 export function handleSearchBtnClear(e) {
     refs.searchInput.value = '';
 }
-
-
-// МАЮ доробити load more для кошика та вішліста!!!

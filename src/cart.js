@@ -3,6 +3,7 @@ import { handleTogleThemeClick } from "./js/helpers";
 import { fetchProductById } from "./js/products-api";
 import { refs } from "./js/refs";
 
+
 //ЗАВАНТАЖЕННЯ СТОРІНКИ
 document.addEventListener('DOMContentLoaded', handleCartItemsLoad)
 
