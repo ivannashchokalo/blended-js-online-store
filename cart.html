@@ -5,8 +5,10 @@
     <link rel="icon" type="image/svg+xml" href="/blended-js-online-store/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cart</title>
-    <script type="module" crossorigin src="/blended-js-online-store/assets/styles-JE8YjOlG.js"></script>
-    <link rel="stylesheet" crossorigin href="/blended-js-online-store/assets/styles-CTxpv8u5.css">
+    <script type="module" crossorigin src="/blended-js-online-store/cart.js"></script>
+    <link rel="modulepreload" crossorigin href="/blended-js-online-store/assets/vendor-DXUopweJ.js">
+    <link rel="modulepreload" crossorigin href="/blended-js-online-store/assets/handlers-DzOe_tGT.js">
+    <link rel="stylesheet" crossorigin href="/blended-js-online-store/assets/handlers-CTxpv8u5.css">
   </head>
   <body>
     <header class="header">
@@ -17,16 +19,16 @@
       </svg>
     </a>
 
-    <form class="search-form">
+    <form class="search-form js-search-form">
       <input
-        class="search-form__input"
+        class="search-form__input js-search-form__input"
         type="text"
         name="searchValue"
         placeholder="Enter product name"
       />
       <button
         type="button"
-        class="search-form__btn-clear"
+        class="search-form__btn-clear js-search-form__btn-clear"
         aria-label="Clear search"
       >
         ×
@@ -55,14 +57,17 @@
         </li>
       </ul>
     </nav>
-    <button class="theme-toggle-btn" aria-label="Toggle theme"></button>
+    <button
+      class="theme-toggle-btn js-theme-toggle-btn"
+      aria-label="Toggle theme"
+    ></button>
   </div>
 </header>
 
     <section class="section">
       <div class="container product-page">
         <main>
-          <ul class="products"></ul>
+          <ul class="products js-products"></ul>
           <div class="not-found">
             <div class="not-found__icon">
               <svg
@@ -115,24 +120,29 @@
                 <p class="cart-summary__hint">Apply promo code at checkout</p>
               </div>
 
-              <button class="cart-summary__btn">Buy products</button>
+              <button class="cart-summary__btn js-cart-summary__btn">
+                Buy products
+              </button>
             </div>
           </div>
         </aside>
       </div>
     </section>
-    <div class="modal">
+    <div class="modal js-modal">
   <div class="modal__content">
-    <button class="modal__close-btn" type="button"></button>
-    <div class="modal-product"></div>
+    <button class="modal__close-btn js-modal__close-btn" type="button"></button>
+    <div class="modal-product js-modal-product"></div>
     <div class="modal-product__actions">
       <button
-        class="modal-product__btn modal-product__btn--wishlist"
+        class="modal-product__btn modal-product__btn--wishlist js-modal-product__btn--wishlist"
         type="button"
       >
         Add to Wishlist
       </button>
-      <button class="modal-product__btn modal-product__btn--cart" type="button">
+      <button
+        class="modal-product__btn modal-product__btn--cart js-modal-product__btn--cart"
+        type="button"
+      >
         Add to Cart
       </button>
     </div>
